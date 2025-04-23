@@ -3,8 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <title>Sản phẩm</title>
+  <style>
+  #products {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+  }
+  .product-category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .product-item {
+    width: 280px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .product-item img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+  .product-item h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .product-item p {
+    font-size: 14px;
+    color: #333;
+    margin: 4px 0;
+  }
+  .product-item strong {
+    color: #c0392b;
+  }
+</style>
+
 </head>
 <body>
+  <section id="products">
+  <h2>SẢN PHẨM</h2>
+
+  <!-- Phân mục 1: SƠN VINSPEC - NANO -->
+  <h3>SƠN VINSPEC - NANO</h3>
+  <div class="product-category">
+    <div class="product-item">
+      <img src="images/vinspec-nano-1.jpg" alt="Sơn Vinspec Nano nội thất" width="200">
+      <h4>Sơn Vinspec Nano Nội Thất Cao Cấp</h4>
+      <p>Bề mặt mịn màng, kháng khuẩn, lau chùi hiệu quả.</p>
+      <p><strong>Giá: Liên hệ 0981 328 166</strong></p>
+    </div>
+
+    <div class="product-item">
+      <img src="images/vinspec-nano-2.jpg" alt="Sơn Vinspec Nano ngoại thất" width="200">
+      <h4>Sơn Vinspec Nano Ngoại Thất Bền Màu</h4>
+      <p>Chống thấm, chống bám bụi, màu bền với thời tiết khắc nghiệt.</p>
+      <p><strong>Giá: Liên hệ 0981 328 166</strong></p>
+    </div>
+
+    <div class="product-item">
+      <img src="images/vinspec-nano-3.jpg" alt="Sơn lót Vinspec Nano" width="200">
+      <h4>Sơn Lót Kháng Kiềm Vinspec Nano</h4>
+      <p>Chống kiềm, chống mốc, tạo bề mặt hoàn hảo cho lớp phủ.</p>
+      <p><strong>Giá: Liên hệ 0981 328 166</strong></p>
+    </div>
+  </div>
+
+  <!-- Phân mục 2: SƠN V-KOLOR -->
+  <h3>SƠN V-KOLOR</h3>
+  <div class="product-category">
+    <div class="product-item">
+      <img src="images/vkolor-1.jpg" alt="Sơn V-Kolor chống thấm" width="200">
+      <h4>Sơn V-Kolor Chống Thấm Gốc Xi</h4>
+      <p>Chống thấm mạnh mẽ, thích hợp sân thượng, tường ẩm.</p>
+      <p><strong>Giá: Liên hệ 0981 328 166</strong></p>
+    </div>
+
+    <div class="product-item">
+      <img src="images/vkolor-2.jpg" alt="Sơn V-Kolor cao cấp nội thất" width="200">
+      <h4>Sơn V-Kolor Nội Thất Cao Cấp</h4>
+      <p>Độ phủ cao, kháng khuẩn, bề mặt mịn, màu sắc sang trọng.</p>
+      <p><strong>Giá: Liên hệ 0981 328 166</strong></p>
+    </div>
+
+    <div class="product-item">
+      <img src="images/vkolor-3.jpg" alt="Sơn V-Kolor ngoại thất siêu bền" width="200">
+      <h4>Sơn V-Kolor Ngoại Thất Siêu Bền</h4>
+      <p>Kháng tia UV, chống nứt, màu bền đẹp đến 10 năm.</p>
+      <p><strong>Giá: Liên hệ 0981 328 166</strong></p>
+    </div>
+  </div>
+</section>
+
   <nav>
     <a href="index.html">Trang chủ</a> |
     <a href="gioi-thieu.html">Giới thiệu</a> |
@@ -15,9 +108,12 @@
 
   <h1>Danh sách sản phẩm</h1>
   <ul>
-    <li>Sơn chống thấm KOVA - Giá rẻ</li>
-    <li>Sơn nội thất Dulux - Mịn đẹp</li>
-    <li>Sơn ngoại thất Jotun - Bền màu</li>
+    <li>Sơn chống thấm Vinspec Nano - Chống thấm tuyệt đối</li>
+    <li>Sơn chống thấm V-kolor - Chống thấm tối ưu, tăng độ bền bỉ</li>
+    <li>Sơn nội thất Vinspec Nano - Giá rẻ, độ phủ cao</li>
+     <li>Sơn nội thất V-kolor - Chống rêu mốc, màng sơn bóng đẹp</li>
+    <li>Sơn ngoại thất Vinspec Nano - Bền màu tối ưu</li>
+    <li>Sơn ngoại thất V-kolor - Bền màu, kháng tia UV tia cực tím, chống nóng chống thấm </li>
   </ul>
 </body>
 </html>
