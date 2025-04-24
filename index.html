@@ -115,6 +115,31 @@
     © 2025 Cung cấp sơn nước VINSPEC | Hotline: 0981 328 166
   </footer>
 </body>
+  // Lấy modal và các phần tử cần thiết
+var modal = document.getElementById("productModal");
+var span = document.getElementsByClassName("close")[0];
+
+// Khi người dùng click vào một sản phẩm
+function showProductDetails(title, image, description, price) {
+  document.getElementById("modal-title").innerText = title;
+  document.getElementById("modal-image").src = image;
+  document.getElementById("modal-description").innerText = description;
+  document.getElementById("modal-price").innerHTML = price;
+  modal.style.display = "block";
+}
+
+// Khi người dùng click vào dấu '×', đóng modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Khi người dùng click ra ngoài modal, đóng modal
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
   <!-- Modal (Popup) -->
 <div id="productModal" class="modal">
   <div class="modal-content">
