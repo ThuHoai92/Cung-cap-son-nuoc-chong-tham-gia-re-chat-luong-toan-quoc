@@ -63,6 +63,31 @@
 
 </head>
 <body>
+  <div class="product-item" onclick="openModal(
+  'SƠN MỊN NỘI THẤT CAO CẤP – IN FAMI',
+  'images/vkolor-ngoai-that1.jpg',
+  `Sơn mịn nội thất cao cấp, là loại sơn được làm từ nhựa tổng hợp Acrylic. Đây là loại sơn có khả năng bám dính tốt, màu sắc phong phú, bề mặt sơn nhẵn mịn, phù hợp cho các công trình đòi hỏi chất lượng trung bình như công trình công cộng, nhà thu nhập thấp.... 
+
+<b>Tính năng vượt trội:</b><br>
+1. Bám dính tốt, bảo vệ lớp sơn bền đẹp.<br>
+2. Che khe nứt nhỏ, lau chùi hiệu quả.<br>
+3. Nhiệt đới hóa phù hợp khí hậu Việt Nam.<br>
+4. Độ phủ cao – tiết kiệm chi phí.<br>
+5. Thi công dễ dàng, thân thiện môi trường.<br>
+6. Phù hợp TCVN: 6934-2001.
+
+<b>Thi công:</b><br>
+- Chuẩn bị bề mặt: Độ ẩm <16%, bề mặt sạch bụi, rong rêu.<br>
+- Khuấy đều trước khi dùng, thi công bằng cọ, rulô hoặc máy phun.<br>
+- Làm sạch bằng nước sạch ngay sau khi thi công.<br>
+<b>Lưu ý:</b> Không thi công khi nhiệt độ <12°C và độ ẩm >85%.<br>
+<b>Dung tích:</b> 5L, 18L.`,
+  'Giá: Liên hệ 0981 328 166'
+)">
+  <img src="images/vkolor-ngoai-that1.jpg" alt="Sơn mịn nội thất cao cấp" style="width:100%; height:auto;">
+  <h3>SƠN MỊN NỘI THẤT CAO CẤP</h3>
+</div>
+
   <section id="products">
   <h2>SẢN PHẨM</h2>
 
@@ -251,4 +276,40 @@
 
 
 </body>
+  <!-- Modal -->
+<div id="productModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+  <div style="background:#fff; padding:20px; border-radius:15px; width:90%; max-width:500px; position:relative; animation: popup 0.3s ease;">
+    <span onclick="closeModal()" style="position:absolute; top:10px; right:15px; font-size:28px; cursor:pointer;">&times;</span>
+    <img id="modalImage" src="" alt="" style="width:100%; border-radius:10px;">
+    <h2 id="modalTitle" style="margin-top:15px;"></h2>
+    <p id="modalDescription" style="text-align:justify; line-height:1.6;"></p>
+    <p id="modalPrice" style="font-weight:bold; font-size:18px; color:#d40000;"></p>
+    <div style="margin-top:15px; display:flex; justify-content:space-around;">
+      <a href="tel:0981328166" style="background:#4CAF50; color:#fff; padding:10px 15px; border-radius:50px; text-decoration:none;">Gọi 0981 328 166</a>
+      <a href="https://zalo.me/0981328166" target="_blank" style="background:#0088cc; color:#fff; padding:10px 15px; border-radius:50px; text-decoration:none;">Zalo</a>
+      <a href="https://www.facebook.com/soup.tomato.90/" target="_blank" style="background:#1877F2; color:#fff; padding:10px 15px; border-radius:50px; text-decoration:none;">Messenger</a>
+    </div>
+  </div>
+</div>
+
+<style>
+@keyframes popup {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+</style>
+<script>
+function openModal(title, image, description, price) {
+  document.getElementById('modalTitle').innerText = title;
+  document.getElementById('modalImage').src = image;
+  document.getElementById('modalDescription').innerHTML = description;
+  document.getElementById('modalPrice').innerText = price;
+  document.getElementById('productModal').style.display = 'flex';
+}
+
+function closeModal() {
+  document.getElementById('productModal').style.display = 'none';
+}
+</script>
+
 </html>
