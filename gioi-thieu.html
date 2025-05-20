@@ -3,6 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <title>Giới thiệu</title>
+    <style>
+    .gallery-wrapper {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .gallery-wrapper img {
+      width: 280px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-wrapper img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    }
+    @media (max-width: 768px) {
+      .gallery-wrapper img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
   </head>
   <body>
     <h1>Giới thiệu về chúng tôi</h1>
@@ -223,35 +252,7 @@
     <div class="project-item">
       <img src="images/cong-trinh-47.jpg">
      </div>
-    <style>
-    .gallery-wrapper {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .gallery-wrapper img {
-      width: 280px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .gallery-wrapper img:hover {
-      transform: scale(1.03);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-    }
-    @media (max-width: 768px) {
-      .gallery-wrapper img {
-        width: 100%;
-        height: auto;
-      }
-    }
-  </style>
-</head>
+    
     <section style="padding: 40px 20px; background-color: #f9f9f9;">
   <h4 style="text-align: center; color: #004080; margin-bottom: 30px;">PHỐI MÀU CÔNG TRÌNH</h4>
   <div class="gallery-wrapper">
