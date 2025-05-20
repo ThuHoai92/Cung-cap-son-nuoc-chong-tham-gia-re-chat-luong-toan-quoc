@@ -4,34 +4,30 @@
     <meta charset="UTF-8" />
     <title>Giới thiệu</title>
     <style>
-    .gallery-wrapper {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .gallery-wrapper img {
-      width: 280px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .gallery-wrapper img:hover {
-      transform: scale(1.03);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-    }
-    @media (max-width: 768px) {
-      .gallery-wrapper img {
-        width: 100%;
-        height: auto;
-      }
-    }
-  </style>
-</head>
+  .gallery-wrapper {
+    display: flex;
+    flex-wrap: nowrap; /* KHÔNG cho xuống hàng */
+    overflow-x: auto; /* Cho phép cuộn ngang */
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .gallery-wrapper img {
+    flex: 0 0 auto; /* Không co giãn */
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .gallery-wrapper img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  }
+</style>
+
   </head>
   <body>
     <h1>Giới thiệu về chúng tôi</h1>
