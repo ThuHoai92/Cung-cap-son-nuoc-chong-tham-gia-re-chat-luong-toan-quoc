@@ -3,31 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Giới thiệu</title>
-    <style>
-  .gallery-wrapper {
-    display: flex;
-    flex-wrap: nowrap; /* KHÔNG cho xuống hàng */
-    overflow-x: auto; /* Cho phép cuộn ngang */
-    gap: 20px;
-    padding: 10px;
-  }
-
-  .gallery-wrapper img {
-    flex: 0 0 auto; /* Không co giãn */
-    width: 280px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .gallery-wrapper img:hover {
-    transform: scale(1.03);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-  }
-</style>
-
+    
   </head>
   <body>
     <h1>Giới thiệu về chúng tôi</h1>
@@ -251,6 +227,38 @@
     
     <section style="padding: 40px 20px; background-color: #f9f9f9;">
   <h4 style="text-align: center; color: #004080; margin-bottom: 30px;">PHỐI MÀU CÔNG TRÌNH</h4>
+      <style>
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .project-item {
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .project-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .project-item h4 {
+      margin: 10px 0 5px;
+      font-size: 16px;
+      color: #222;
+    }
+    .project-item p {
+      margin: 0;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
   <div class="gallery-wrapper">
     <img src="images/ct-1.jpg" alt="Ct 1">
     <img src="images/ct-2.jpg" alt="Ct 2">
