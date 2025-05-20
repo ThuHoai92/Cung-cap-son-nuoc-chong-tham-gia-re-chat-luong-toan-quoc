@@ -226,17 +226,47 @@
     <section style="padding: 40px 20px; background-color: #f9f9f9;">
   <h4 style="text-align: center; color: #004080; margin-bottom: 30px;">PHỐI MÀU CÔNG TRÌNH</h4>
 
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-    <img src="images/ct-1.jpg" alt="Ct 1" style="width: 300px; max-width: 100%; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.2);">
-    <img src="images/ct-2.jpg" alt="Ct 2" style="width: 300px; max-width: 100%; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.2);">
-    <img src="images/ct-3.jpg" alt="Ct 3" style="width: 300px; max-width: 100%; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.2);">
-    <img src="images/ct-4.jpg" alt="Ct 4" style="width: 300px; max-width: 100%; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.2);">
-    <img src="images/ct-5.jpg" alt="Ct 5" style="width: 300px; max-width: 100%; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.2);">
-    <img src="images/ct-6.jpg" alt="Ct 6" style="width: 300px; max-width: 100%; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.2);">
-    <img src="images/ct-7.jpg" alt="Ct 7" style="width: 300px; max-width: 100%; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.2);">
-    <img src="images/ct-8.jpg" alt="Ct 8" style="width: 300px; max-width: 100%; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.2);">
+  <style>
+    .gallery-wrapper {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .gallery-wrapper img {
+      width: 280px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-wrapper img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    }
+    @media (max-width: 768px) {
+      .gallery-wrapper img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+
+  <div class="gallery-wrapper">
+    <img src="images/ct-1.jpg" alt="Ct 1">
+    <img src="images/ct-2.jpg" alt="Ct 2">
+    <img src="images/ct-3.jpg" alt="Ct 3">
+    <img src="images/ct-4.jpg" alt="Ct 4">
+    <img src="images/ct-5.jpg" alt="Ct 5">
+    <img src="images/ct-6.jpg" alt="Ct 6">
+    <img src="images/ct-7.jpg" alt="Ct 7">
+    <img src="images/ct-8.jpg" alt="Ct 8">
   </div>
 </section>
+
       
     <!-- Nút liên hệ cố định -->
 <div style="position:fixed; bottom:20px; right:20px; display:flex; flex-direction:column; gap:10px; z-index:999;">
