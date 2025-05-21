@@ -46,7 +46,7 @@
     }
   </style>
 
-
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
 </head>
 <body>
   <nav>
@@ -73,6 +73,44 @@
       <img src="z6530401777424_bc9e6189208f5c3050f7c976a68d80c3.jpg" alt="Sơn COLOR FLEX">
     </div>
   </div>
+  <section style="padding: 40px 20px; background-color: #ffffff;">
+  <div class="gallery-grid">
+    <a href="images/anh-1.jpg" data-lightbox="project"><img src="images/anh-1.jpg" alt="Ảnh 1"></a>
+    <a href="images/anh-2.jpg" data-lightbox="project"><img src="images/anh-2.jpg" alt="Ảnh 2"></a>
+    <a href="images/anh-3.jpg" data-lightbox="project"><img src="images/anh-3.jpg" alt="Ảnh 3"></a>
+    <a href="images/anh-4.jpg" data-lightbox="project"><img src="images/anh-4.jpg" alt="Ảnh 4"></a>
+    <a href="images/anh-5.jpg" data-lightbox="project"><img src="images/anh-5.jpg" alt="Ảnh 5"></a>
+    <a href="images/anh-6.jpg" data-lightbox="project"><img src="images/anh-6.jpg" alt="Ảnh 6"></a>
+    <a href="images/anh-7.jpg" data-lightbox="project"><img src="images/anh-7.jpg" alt="Ảnh 7"></a>
+    <a href="images/anh-8.jpg" data-lightbox="project"><img src="images/anh-8.jpg" alt="Ảnh 8"></a>
+    <a href="images/anh-9.jpg" data-lightbox="project"><img src="images/anh-9.jpg" alt="Ảnh 9"></a>
+    <a href="images/anh-10.jpg" data-lightbox="project"><img src="images/anh-10.jpg" alt="Ảnh 10"></a>
+  </div>
+</section>
+
+<style>
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .gallery-grid img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+</style>
+
   <footer>
     © 2025 Cung cấp sơn nước VINSPEC | Hotline: 0981 328 166
   </footer>
@@ -88,7 +126,7 @@
     💬 Messenger
   </a>
 </div>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </body>
   
 
