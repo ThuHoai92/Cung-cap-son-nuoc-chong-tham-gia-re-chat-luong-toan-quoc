@@ -9,6 +9,62 @@
     <meta name="description" content="Chuyên cung cấp sơn nước và chống thấm giá rẻ toàn quốc. Tư vấn miễn phí, giao hàng tận nơi, chất lượng đảm bảo. Sơn nội thất, ngoại thất, thi công chuẩn kỹ thuật.">
 
   <style>
+    .call-now-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #e6f7ff;
+  color: #000;
+  padding: 10px 15px;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  text-decoration: none;
+  animation: blinkCall 1s infinite;
+}
+
+.call-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #00bcd4;
+  background-image: url('https://img.icons8.com/ios-filled/50/ffffff/phone.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.call-text {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Hiệu ứng nhấp nháy */
+@keyframes blinkCall {
+  0%, 100% {
+    box-shadow: 0 0 5px #00bcd4;
+  }
+  50% {
+    box-shadow: 0 0 15px #00bcd4;
+  }
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 768px) {
+  .call-now-button {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .call-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
     body {
       font-family: sans-serif;
       background: #fef3f7;
@@ -48,6 +104,11 @@
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
 </head>
+  <a href="tel:0981328166" class="call-now-button" title="Gọi ngay">
+  <div class="call-icon"></div>
+  <div class="call-text">Gọi: <strong>0981 328 166</strong></div>
+</a>
+
 <body>
   <nav>
   <a href="index.html">Trang chủ</a> |
